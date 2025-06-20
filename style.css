@@ -1,0 +1,70 @@
+/* style.css */
+body {
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.nav-link {
+  margin-left: 15px;
+}
+
+footer {
+  background-color: #212529;
+  color: #fff;
+  padding: 40px 0;
+}
+
+footer a {
+  color: #ffc107;
+  margin-right: 15px;
+  font-size: 1.2rem;
+}
+
+footer a:hover {
+  color: #fff;
+}
+
+/* Animation styles */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-title {
+  animation: fadeInUp 1s ease-out;
+}
+
+.hero-subtitle {
+  animation: fadeInUp 1.5s ease-out;
+  animation-delay: 0.3s;
+  animation-fill-mode: both;
+}
+
+/* Typewriter effect for title */
+.typewriter {
+  overflow: hidden;
+  border-right: .15em solid orange;
+  white-space: nowrap;
+  animation: typing 3s steps(40, end), blink-caret .75s step-end infinite;
+  display: inline-block;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 50% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: rgb(104, 104, 231); }
+}
